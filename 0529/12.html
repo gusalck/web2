@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #menu {
+            width: 260px;
+            float: right;
+        }
+        #section{
+            width: 700px;
+            float: left;
+        }
+        li{
+            list-style: none;
+        }
+        /* 소형 디바이스 */
+        @media screen and (max-width: 767px){
+            body{
+                width: auto;
+            }
+            #menu{
+                width: auto;
+                float: none;
+            }
+            #section{
+                width: auto;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="section">
+        <h1>반응형 웹 패턴 2(오른쪽 메뉴가 아래쪽으로 이동)</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quia, consequatur est nam blanditiis, odit nesciunt voluptatibus beatae deleniti quos cumque officiis consectetur, id reiciendis. Sapiente porro eum nesciunt aliquam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatum. Quas, mollitia repellendus distinctio et ipsam voluptas quibusdam assumenda facilis id libero quia vel quam reprehenderit sequi aperiam, eum unde?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptates quam aspernatur odio qui facere non praesentium magni voluptatibus exercitationem. Accusantium optio itaque, perspiciatis repellendus ex quae maiores asperiores odit?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, nihil repellat. Culpa vero corporis ex quis, illum odit doloremque numquam ea sequi ipsum autem, animi ratione labore similique! Qui, vitae.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto numquam ullam quibusdam porro neque, amet, beatae molestias reprehenderit delectus, nesciunt laborum molestiae commodi corrupti. Excepturi incidunt tempore repellendus minima vero?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio quam est veniam officiis laboriosam sed tenetur animi quod ipsam sunt, quisquam ducimus recusandae quo enim, cum delectus dicta. Impedit?
+        </p>
+    </div>
+    <div id="menu">
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+        </ul>
+    </div>
+</body>
+</html>
