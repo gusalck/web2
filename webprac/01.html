@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Krona One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <!-- Kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&display=swap" rel="stylesheet">
+    <style>
+        /* 웹 폰트 */
+        .krona-one-regular {
+            font-family: "Krona One", sans-serif;
+            font-weight: 400;
+            font-style: normal; }
+        .kanit-thin {
+            font-family: "Kanit", sans-serif;
+            font-weight: 100;
+            font-style: normal; }       
+            /* 리셋 */
+        *{ margin: 0;  padding: 0; }
+
+        /* 첫번째 유형 */    
+        .header_logo a{ 
+            font-size: 20px; 
+            text-decoration: solid; 
+            color: black; }
+        em{ 
+            font-style: normal; }
+        .header_inner{
+            width: 100%;
+            height: 100px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;            
+            justify-content: space-between;            
+            padding: 0 20px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ccc; /*경계선 표시*/
+        }
+        .header_logo{ font-size: 20px; }
+        .Coffee{ font-size: 40px; color: #906052; }
+        .Purple_Tea{ font-size: 40px; color: #8F7ED7; }
+
+        /* 두번째 유형 */
+        .slide_1{
+            background: #ccc;
+        }
+        .img1{
+            background: url(imgs/main_imgs.jpg) no-repeat center center;
+            width: 1920px;
+            height: 580px;
+            background-attachment: scroll;
+
+        }
+        .writing{
+            width: 1050px;
+            margin-top: auto;
+            margin-left: auto;
+            margin-bottom: auto;
+            margin-right: auto;
+            padding: 150px 20px;
+        }
+        .writing h1{
+            font-size: 111px;
+            font-weight: 500;
+            color: #ffffff;
+            text-transform: capitalize;
+        }
+        .writing p{
+            font-size: 20px;
+            color: #ffffff;
+            margin-left: 35%;            
+            margin-bottom: 100px;   
+        }        
+        .BTN a{
+            font-size: 20px;
+            color: #ffffff;
+            background: #906052;
+            padding: 11px 50px;
+            text-decoration-line: none;
+            margin-left: 17%; 
+        }
+        .BTN a.Purple{
+            background: #8C567E;
+            color: #ffffff;
+            margin-left: 30%;
+        }
+
+        /* 세번째 영역 */
+
+        .container{
+            width: 1160px;
+            height: 500px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+        .section {
+            padding: 120px 0;
+        }
+        .section > h1{
+            font-size: 50px;
+            margin: 5px;
+            text-align: center;
+        }
+        .section > p{
+            font-size: 22px;
+            font-weight: bolder;
+            font-weight: 300;
+            margin: 10px;
+            text-align: center;
+            color: #00000062;
+        }
+        .image_inner{
+            display: flex;
+            justify-content: space-between;
+        }
+        .image{ 
+            width: 48%;
+            height: 370px;
+            padding: 220px 30px 30px 50px;
+            box-sizing: border-box;
+            color: #ffffff;
+        }
+        .image.img2{
+            background: url(imgs/Coffee.jpg) no-repeat center center / cover;
+        }
+        .image.img3{
+            background: url(imgs/Purple_Tea.png) no-repeat center center / cover;
+        }
+        .img__title{
+            font-size: 22px;
+        }
+        .img__desc{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .img__BTN1{
+            font-weight: 300;
+            background: #906052;
+            color: #ffffff;
+            padding: 7px 15px;
+            text-decoration-line: none;
+        }
+        .img__BTN2{
+            font-weight: 300;
+            background: #8C567E;
+            color: #ffffff;
+            padding: 7px 15px;
+            text-decoration-line: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 첫번째 영역 -->
+    <header class="header_class krona-one-regular">
+        <div class="header_inner">
+            <div class="header_logo">
+                <a href="01.html"> <em class="Coffee">Coffee</em> and <em class="Purple_Tea">Purple Tea</em> site</a>
+            </div>
+        </div>
+    </header>
+    <!-- 두번째 영역 -->
+    <section id="slide" class="slide_1 kanit-thin" >
+        <div>
+            <div>
+                <div class="img1">
+                    <div class="writing">
+                        <h1>오신 것을 환영합니다</h1>
+                        <p>커피와 퍼플티에 대해 알아보세요</p>
+                        <div class="BTN">
+                            <a href="https://coffeelibre.kr/#0">커피 구매</a>
+                            <a href="https://www.teafference.com/product/goods_list?ct=1" class="Purple">퍼플티 구매</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 세번째 영역 -->
+    <section class="image_wrap kanit-thin section">
+        <h1>커피와 퍼플티에 대해</h1>
+        <p>마우스 클릭시 자세한 정보가 나옵니다.</p>
+        <div class="image_inner container">
+            <div class="image img2">
+                <h1 class="img__title">Coffee</h1>
+                <p class="img__desc">커피란?</p>
+                <a class="img__BTN1" href="02.html">자세히 보기</a>
+            </div>
+            <div class="image img3">
+                <h1 class="img__title">Purple Tea</h1>
+                <p class="img__desc">퍼플티란?</p>
+                <a class="img__BTN2" href="03.html">자세히 보기</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
