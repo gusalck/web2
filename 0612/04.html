@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function anonymousCallten(fun){
-            for(let i = 0;i<10;i++){
+        function anonymousCallten(fun, n){
+            for(let i = 0;i<n;i++){
                 fun(i+1);
             }
         }
@@ -15,7 +15,8 @@
            alert("익명 함수 호출 "+ i);
         }
 
-        anonymousCallten(fun);
+        let n = parseInt(prompt("정수를 입력"));
+        anonymousCallten(fun, n);
     </script>
 </head>
 <body>
