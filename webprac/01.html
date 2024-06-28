@@ -12,6 +12,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&display=swap" rel="stylesheet">
+    <script>
+        window.onload = function(){
+            let clock = document.getElementById('clock');  
+
+            setInterval(function(){
+                let now = new Date();
+                let year = now.getFullYear();
+                let month = String(now.getMonth() + 1).padStart(2, '0');
+                let date = String(now.getDate()).padStart(2, '0');
+                let day = now.toLocaleString('ko-KR', { weekday: 'long' });
+                let hours = String(now.getHours()).padStart(2, '0');
+                let minutes = String(now.getMinutes()).padStart(2, '0');
+                let seconds = String(now.getSeconds()).padStart(2, '0');
+                clock.innerHTML = `${year}-${month}-${date} (${day}) ${hours}:${minutes}:${seconds}`;
+            },1000);
+            clock.style.textAlign = 'center';
+        }
+    </script>
     <style>
         /* 웹 폰트 */
         .krona-one-regular {
@@ -52,7 +70,7 @@
             background: #ccc;
         }
         .img1{
-            background: url(imgs/main_imgs.jpg) no-repeat center center;
+            background: url(imgs/main_imgs.jpg) no-repeat center center / cover;
             width: 1920px;
             height: 580px;
             background-attachment: scroll;
@@ -200,5 +218,6 @@
             </div>
         </div>
     </section>
+    <h1 id="clock"></h1>
 </body>
 </html>

@@ -12,6 +12,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Knewave&family=Krona+One&display=swap" rel="stylesheet">
+    <script>
+        window.onload = function(){
+            let button = document.getElementById('row');
+
+            button.onclick = function(){
+                alert("퍼플티 자세히 보기로 넘어갑니다");
+            };
+
+            let coffeetitle = document.getElementById('title');
+
+            coffeetitle.onclick = function(){
+                alert("커피 영상으로 이동합니다.");
+                window.location.href = 'https://www.youtube.com/watch?v=Lp05UPu6_UI';          
+            };
+        };
+    </script>
     <style>
         .krona-one-regular {
             font-family: "Krona One", sans-serif;
@@ -63,6 +79,10 @@
             width: 75%;
             color: #ffffff;
         }
+        #imageType{
+            background: #ccc;
+            height: 500px;
+        }
         .arrow a{
             color: #ffffff;
             position: absolute;
@@ -85,7 +105,7 @@
     </header>
     <section id="imageType">
         <div class="image knewave-regular">
-            <h1 class="Textsize1 ">커피란?</h1>
+            <h1 id="title" class="Textsize1 ">커피란?</h1>
             <p class="Textsize2">
                 커피는 커피나무의 씨를 볶아 가루로 만들어 따뜻한 물로 우려내어 마시는 음료입니다. 세계적으로 커피가 생산되는 지역은 남위 25˚부터<br>
                 북위 25˚사이인 커피 벨트라고 알려져 있습니다. 이 지역은 주로 고지대일수록 품질이 우수한 커피가 생산됩니다. <br><br>
@@ -102,7 +122,7 @@
             </p>
         </div>
         <div class="arrow">
-            <a href="03.html"></a>
+            <a id="row" href="03.html"></a>
         </div>
     </section>
 </body>
